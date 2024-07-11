@@ -1,0 +1,209 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.portfolio-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-3 {
+  flex: 0 0 calc(33.333% - 30px);
+  margin-right: 15px;
+  margin-bottom: 30px;
+}
+
+@media(max-width:992px) {
+  .portfolio-3 {
+    flex: 0 0 calc(50% - 30px);
+    margin-right: 15px;
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width:768px) {
+  .portfolio-3 {
+    flex: 0 0 calc(100% - 10px);
+    margin-right: 15px;
+    margin-bottom: 30px;
+  }
+}
+
+
+.portfolio-3:last-child {
+  margin-right: 0;
+}
+
+
+
+.container>.row>.foot_logo>img .Company-logo {
+  width: 300px !important;
+}
+
+
+.footer-in-payment-method {
+  width: 350px !important;
+  margin-bottom: 5px;
+  display: block;
+  padding: 20px;
+  border-radius: 10px !important;
+  border: 1px solid;
+  border-color: #e35cbd80 #e35cbd80 #817ce78f #817ce78f;
+  border-image-slice: 1;
+}
+
+
+.payment-method {
+  position: relative;
+}
+
+
+@media (max-width: 430px) {
+  .foot_logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-in-payment-method {
+    width: 250px;
+    margin-bottom: 30px;
+  }
+
+  .overlay-text {
+    top: 0;
+    font-size: 17px;
+    width: 120px;
+  }
+
+
+}
+
+
+.overlay-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  height: 30px;
+  font-size: 13px;
+  font-weight: 800;
+  width: 75px;
+  position: absolute;
+  top: -15px;
+  /* background-color: purple; */
+  /* Adjust as needed to position text above the border */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #181818;
+  /* Background color for text */
+  /* padding: 0 5px; */
+  /* Add padding to the text */
+  z-index: 9999;
+  color: white;
+  /* Add border to the text */
+}
+
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+
+
+.footer-contact-number:hover,
+.footer-in-Pages:hover {
+  background: linear-gradient(-90deg, blue, rgb(247, 29, 163));
+  color: transparent;
+  -webkit-background-clip: text;
+  transition: all 150ms ease-in-out;
+}
+
+.modal-click {
+  background-color: rgba(20, 20, 20, 0.874);
+}
+
+.form-group textarea {
+  background-color: transparent;
+}
+
+.modal-click Button {
+  height: 5vh;
+  width: 100px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+
+.toggle-button {
+  display: none;
+}
+
+@media all and (max-width: 1020px) {
+  .toggle-button {
+    display: block;
+  }
+
+  ;
+}
+
+
+.enq-side-btn-icone {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  /* animation-name: bounce; */
+  animation-timing-function: linear;
+  /* background: #343534 none repeat scroll 0 0; */
+  border-radius: 4px;
+  bottom: 240px;
+  font-size: 40px;
+  right: 11px;
+  /* padding: 7px 10px; */
+  position: fixed;
+  transform-origin: center bottom 0;
+  z-index: 1111;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  cursor: pointer;
+}

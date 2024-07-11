@@ -1,0 +1,59 @@
+/* html, */
+body,
+.intro {
+  height: 100%;
+}
+
+table td,
+table th {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.mask-custom {
+  background: rgba(24, 24, 16, .2);
+  border-radius: 2em;
+  backdrop-filter: blur(25px);
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  background-clip: padding-box;
+  box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+}
+
+.table-fixed {
+    table-layout: fixed;
+    width: 100%;
+  }
+  
+  .table-fixed th,
+  .table-fixed td {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+  
+  .table-fixed th:nth-child(1),
+  .table-fixed td:nth-child(1) {
+    width: 5%;
+  }
+  
+  .table-fixed th:nth-child(2),
+  .table-fixed td:nth-child(2) {
+    width: 20%;
+  }
+  
+  .table-fixed th:nth-child(3),
+  .table-fixed td:nth-child(3) {
+    width: 15%;
+  }
+  
+  .table-fixed th:nth-child(4),
+  .table-fixed td:nth-child(4) {
+    width: 20%;
+  }
+  
+  .table-fixed th:nth-child(5),
+  .table-fixed td:nth-child(5) {
+    width: 10%;
+  }
+  
